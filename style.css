@@ -15,14 +15,18 @@ body
     color: var(--main-color) ;
     border-bottom: 2px solid var(--main-color);
 }
-.slider
-{
+.slider{
     width: 50%;
     height: 300px;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
-    
+}
+@media screen and (max-width: 376px) {
+    .slider{
+        width: 95%;
+        height: 250px;
+    }
 }
 /* CARRUSEL DE IMAGENES */
 .slider__images
@@ -38,6 +42,11 @@ body
     margin: 1em auto;
     display: flex;/*para que se dibuje el slider-nav*/
     justify-content: space-around;
+}
+@media screen and (max-width: 376px) {
+    .slider-navigation{
+        width: 70%;
+    }
 }
 
 

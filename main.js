@@ -88,8 +88,8 @@ const counter=()=>
 // intervalos de timepo para el contador
 const starInterval=()=>
 {
-    // esta funcion va a llamar ala funcion counter cada 1000 milisegundos
-    setInterval(counter,2000);
+    // esta funcion va a llamar ala funcion counter cada 5000 milisegundos
+    setInterval(counter,5000);
 }
 
 // iniciamos el contador
