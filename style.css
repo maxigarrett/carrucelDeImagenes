@@ -1,0 +1,63 @@
+:root
+{
+    --bg-color:#2B303A;
+    --main-color:#D64933;
+}
+body
+{
+    background-color: var(--bg-color) ;
+    box-sizing: border-box;
+    margin: 0;
+}
+.title
+{
+    text-align: center;
+    color: var(--main-color) ;
+    border-bottom: 2px solid var(--main-color);
+}
+.slider
+{
+    width: 50%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+/* CARRUSEL DE IMAGENES */
+.slider__images
+{
+    border-radius: 10px;
+    position: relative;
+    left: 0;/*este lef es el que vamos a ir modificando desde js para que se valla corriendo de imagenes*/
+    transition: left 1s ease;
+}
+.slider-navigation{
+    height: 20px;
+    width: 30%;/*este ancho se calcula desde js porque si hay muchas fotos se amontonas los circulos de navegacion*/
+    margin: 1em auto;
+    display: flex;/*para que se dibuje el slider-nav*/
+    justify-content: space-around;
+}
+
+
+/* BARRA DE NAVEGACION DE IMAGENES SILDER BAR */
+.slider-nav
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* primer valor vertical , horizontal , el desenfoque, el color y que la sombra va a estrar por dentro */
+    box-shadow: 2px 2px 2px grey inset;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.slider-nav:hover
+{
+    background-color: var(--main-color);
+}
+.slider-nav--active
+{
+    box-shadow: 2px 2px grey inset;
+    background-color: var(--main-color);
+}
